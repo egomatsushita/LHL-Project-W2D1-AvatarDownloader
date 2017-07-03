@@ -41,10 +41,6 @@ function downloadImageByURL(url, filePath) {
 }
 
 getRepoContributors("jquery", "jquery", function(err, result) {
-  // console.log("Errors:", err);
-  // console.log("Result:", result.avatar_url);
   downloadImageByURL(result.avatar_url, `./avatars/${result.login}.jpg`);
-
 });
 
-// downloadImageByURL("https://avatars2.githubusercontent.com/u/2741?v=3&s=466", "avatars/kvirani.jpg");
