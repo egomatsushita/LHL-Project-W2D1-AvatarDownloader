@@ -1,5 +1,8 @@
 var request = require("request");
 var fs = require('fs');
+var arg = process.argv.slice(2);
+var repoOwner = arg[0];
+var repoName = arg[1];
 
 var GITHUB_USER = "egomatsushita";
 var GITHUB_TOKEN = "568b7c134d4568ef1761d64d7a9d4242944630f6";
@@ -40,7 +43,7 @@ function downloadImageByURL(url, filePath) {
          .pipe(fs.createWriteStream(filePath));
 }
 
-getRepoContributors("jquery", "jquery", function(err, result) {
+getRepoContributors(repoOwner, repoName, function(err, result) {
   downloadImageByURL(result.avatar_url, `./avatars/${result.login}.jpg`);
 });
 
