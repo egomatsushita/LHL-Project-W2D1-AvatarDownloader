@@ -1,0 +1,23 @@
+{
+  "name": "githubAvatar",
+  "version": "1.0.0",
+  "description": "## Problem Statement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egomatsushita/LHL-W2D1-githubAvatar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egomatsushita/LHL-W2D1-githubAvatar/issues"
+  },
+  "homepage": "https://github.com/egomatsushita/LHL-W2D1-githubAvatar#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
