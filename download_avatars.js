@@ -7,6 +7,11 @@ var repoName = arg[1];
 var GITHUB_USER = "egomatsushita";
 var GITHUB_TOKEN = "568b7c134d4568ef1761d64d7a9d4242944630f6";
 
+if(arg.length !== 2) {
+  console.log("*** Please input repo-owner and repo-name ***\nAnd follow this pattern: node <file> <owner> <repo>");
+  return;
+}
+
 console.log('Welcome to the GitHub Avatar Downloader!');
 
 function getRepoContributors(repoOwner, repoName, cb) {
