@@ -1,11 +1,12 @@
 var request = require("request");
 var fs = require('fs');
+require('dotenv').config();
 var arg = process.argv.slice(2);
 var repoOwner = arg[0];
 var repoName = arg[1];
 
-var GITHUB_USER = "egomatsushita";
-var GITHUB_TOKEN = "568b7c134d4568ef1761d64d7a9d4242944630f6";
+var GITHUB_USER = process.env.DB_USER;
+var GITHUB_TOKEN = process.env.DB_TOKEN;
 
 if(arg.length !== 2) {
   console.log("*** Please input repo-owner and repo-name ***\nAnd follow this pattern: node <file> <owner> <repo>");
