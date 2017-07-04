@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/egomatsushita/LHL-W2D1-githubAvatar#readme",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "request": "^2.81.0"
   }
 }
